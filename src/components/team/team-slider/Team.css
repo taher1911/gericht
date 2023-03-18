@@ -1,0 +1,11 @@
+.team__slider {
+  padding: var(--section-padding);
+}
+
+.team__slider__image {
+  max-width: 350px;
+}
+.team-slider-image {
+  border: 1px solid var(--main-color);
+  width: 100%;
+}

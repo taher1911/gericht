@@ -1,0 +1,20 @@
+.func__button {
+  color: #0c0c0c;
+  background: var(--main-color);
+  font-size: var(--small-font);
+  display: inline-block;
+  text-transform: capitalize;
+  line-height: 28px;
+  letter-spacing: 0.64px;
+  border: 1px solid var(--main-color);
+  padding: 8px 32px 8px 32px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+  transition: 0.35s all ease-in-out;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: var(--main-font);
+}
+.func__button:hover {
+  color: var(--main-color);
+  background: transparent;
+}

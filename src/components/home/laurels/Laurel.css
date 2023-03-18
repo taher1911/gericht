@@ -1,0 +1,44 @@
+.laurel {
+  display: flex;
+}
+
+.laurel .image {
+  margin-right: 1rem;
+}
+
+.laurel .text .title {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.6rem;
+}
+
+.laurel .text p {
+  font-family: var(--sub-font-family);
+  color: var(--mini-sub-color);
+}
+
+@media screen and (max-width: 1300px) {
+  .laurel .text .title {
+    font-size: 20px;
+  }
+  .laurel .text p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .laurel .text .title {
+    font-size: 16px;
+  }
+  .laurel .text p {
+    font-size: 13px;
+  }
+  .laurel .image {
+    margin-right: 0.5rem;
+  }
+  .laurel .image img {
+    width: 50px;
+  }
+}

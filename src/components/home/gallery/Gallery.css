@@ -1,0 +1,26 @@
+.home__gallery {
+  padding: var(--section-padding);
+}
+
+.home__gallery .content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+}
+
+.home__gallery .content .text .description {
+  color: var(--mini-sub-color);
+  font-family: var(--sub-font-family);
+  margin: 2rem 0;
+  line-height: 1.66;
+}
+
+.home__gallery .content .slider {
+  max-width: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 800px) {
+  .home__gallery .content {
+    grid-template-columns: 1fr;
+  }
+}

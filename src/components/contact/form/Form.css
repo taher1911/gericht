@@ -1,0 +1,35 @@
+.contact__form {
+  padding: var(--section-padding);
+  background-image: url("../../../assets/home-about-section.png");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact__form .content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 1em;
+}
+
+.contact__form
+  .content
+  .contact__form-form-container
+  .contact__form-form
+  .form__input {
+  margin-bottom: 2rem;
+}
+
+.contact__form .content .image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__form .content {
+    grid-template-columns: 1fr;
+  }
+  .contact__form .content .image {
+    display: none;
+  }
+}

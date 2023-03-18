@@ -1,0 +1,29 @@
+#top {
+  position: fixed;
+  bottom: 30px;
+  right: -35px;
+  transition: all 0.5s;
+  z-index: 2;
+}
+.top__component {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  color: var(--main-color);
+  font-family: var(--main-font-family);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.top__component span {
+  display: inline-block;
+  height: 50px;
+  width: 1px;
+  background: var(--main-color);
+  margin-bottom: 1rem;
+}

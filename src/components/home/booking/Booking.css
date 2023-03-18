@@ -1,0 +1,31 @@
+.booking__section {
+  padding: var(--section-padding);
+  position: relative;
+}
+.booking__section .table {
+  border: 1px solid var(--main-color);
+  padding: 48px 16px 48px 16px;
+  text-align: center;
+}
+
+.booking__section .table .inputs__container {
+  margin: 5rem 0 4rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+}
+
+@media screen and (max-width: 1300px) {
+  .booking__section .table .inputs__container {
+    margin: 2.5rem 0 2rem 0;
+    gap: 1em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .booking__section .table .inputs__container {
+    grid-template-columns: 1fr;
+  }
+  .restaurant-logo {
+    width: 90px;
+  }
+}

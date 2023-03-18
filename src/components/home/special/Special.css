@@ -1,0 +1,131 @@
+.home__special {
+  text-align: center;
+  padding: var(--section-padding);
+}
+
+.home__special .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3em;
+  margin: 4rem 0;
+}
+
+.home__special .content .wine .title,
+.home__special .content .cocktails .title {
+  color: var(--sub-color);
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 58.5px;
+  letter-spacing: 0.64px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.home__special .content .wine ul li,
+.home__special .content .cocktails ul li {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.home__special .content .wine ul li div,
+.home__special .content .cocktails ul li div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.home__special .content .wine ul li div .list__title,
+.home__special .content .cocktails ul li div .list__title {
+  color: var(--main-color);
+  font-size: 1.4rem;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+.home__special .content .wine ul li div .line,
+.home__special .content .cocktails ul li div .line {
+  flex: 1;
+  margin: 0 0.5rem;
+  border-bottom: 1px solid #ebebeb;
+}
+.home__special .content .wine ul li div .price,
+.home__special .content .cocktails ul li div .price {
+  color: var(--sub-color);
+  font-family: var(--sub-font-family);
+}
+
+.home__special .content .wine ul li .list__description,
+.home__special .content .cocktails ul li .list__description {
+  color: var(--mini-sub-color);
+  font-family: var(--sub-font-family);
+}
+
+@media screen and (max-width: 1300px) {
+  .home__special .content {
+    margin: 2rem 0;
+  }
+  .home__special .content .image {
+    width: 300px;
+  }
+  .home__special .content .image img {
+    width: 100%;
+  }
+  .home__special .content .wine .title,
+  .home__special .content .cocktails .title {
+    font-size: 30px;
+
+    margin-bottom: 1.5rem;
+  }
+  .home__special .content .wine ul li,
+  .home__special .content .cocktails ul li {
+    margin-bottom: 30px;
+  }
+  .home__special .content .wine ul li div .list__title,
+  .home__special .content .cocktails ul li div .list__title {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .home__special .content {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  .home__special .content .image {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .home__special .content {
+    gap: 0;
+  }
+  .home__special .content .image {
+    width: 210px;
+    margin: auto;
+  }
+  .home__special .content .wine .title,
+  .home__special .content .cocktails .title {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+  .home__special .content .wine ul li div,
+  .home__special .content .cocktails ul li div {
+    margin-bottom: 0.3rem;
+  }
+  .home__special .content .wine ul li,
+  .home__special .content .cocktails ul li {
+    margin-bottom: 15px;
+  }
+  .home__special .content .wine ul li div .list__title,
+  .home__special .content .cocktails ul li div .list__title {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .home__special .content .wine ul li .list__description,
+  .home__special .content .cocktails ul li .list__description {
+    font-size: 13px;
+  }
+  .home__special .content .wine ul li div .price,
+  .home__special .content .cocktails ul li div .price {
+    font-size: 14px;
+  }
+}

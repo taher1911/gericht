@@ -1,0 +1,50 @@
+.select {
+  border: 1px solid #444;
+  border-radius: 3px;
+  padding: 1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  font-family: var(--sub-font-family);
+  color: var(--mini-sub-color);
+}
+.select.active,
+.select:hover {
+  border: 1px solid var(--main-color);
+}
+.select .value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.select .values {
+  border: 1px solid var(--main-color);
+  position: absolute;
+  left: 0;
+  top: 57px;
+  width: 100%;
+  min-height: 30px;
+  max-height: 150px;
+  overflow-y: scroll;
+  background: #000;
+  z-index: 2;
+}
+.select .values li {
+  text-align: left;
+  padding: 1rem;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.select .values li:hover {
+  color: var(--main-color);
+}
+
+@media screen and (max-width: 650px) {
+  .select {
+    font-size: 14px;
+  }
+  .select .values li {
+    font-size: 14px;
+    padding: 0.7rem 1rem;
+  }
+}

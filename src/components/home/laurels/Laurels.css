@@ -1,0 +1,54 @@
+.home__laurels {
+  padding: var(--section-padding);
+  background-image: url("../../../assets/home-about-section.png");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home__laurels .content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 1em;
+}
+
+.home__laurels .content .text .laurels {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em 2em;
+}
+
+.home__laurels .content .laurel__image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .home__laurels .content .text .laurels {
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    gap: 2em 0em;
+  }
+  .home__laurels .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home__laurels .content .text .laurels {
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em 0em;
+  }
+  .home__laurels .content {
+    grid-template-columns: 1fr;
+  }
+  .home__laurels .content .laurel__image {
+    width: 80%;
+    margin: 1rem auto 0 auto;
+  }
+  .home__laurels .content .laurel__image img {
+    width: 90%;
+  }
+}

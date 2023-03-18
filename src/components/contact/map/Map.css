@@ -1,0 +1,22 @@
+.contact__map {
+  padding: var(--section-padding);
+}
+
+.contact__map .bg {
+  background-image: url("../../../assets/contact-map.jpg");
+  border: 1px solid var(--main-color);
+  height: 65vh;
+  max-height: 600px;
+}
+
+@media screen and (max-width: 900px) {
+  .contact__map .bg {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact__map .bg {
+    height: 40vh;
+  }
+}

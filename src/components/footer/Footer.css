@@ -1,0 +1,129 @@
+.footer {
+  padding: 5rem 0 0 0;
+  background-image: url("../../assets/footer-img.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-top: 20rem;
+}
+.footer__data {
+  width: 75%;
+  margin: 10rem auto 7rem auto;
+  color: var(--mini-sub-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: var(--sub-font-family);
+}
+
+.footer__data .contact .contact__title,
+.footer__data .working .working__title {
+  font-family: var(--main-font-family);
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #fff;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.footer__data .contact p {
+  margin-bottom: 1rem;
+}
+.footer__data .contact span {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.footer__data .gericht p {
+  margin: 2rem 0 1rem 0;
+  line-height: 1.7;
+}
+.footer__data .gericht ul {
+  display: flex;
+  justify-content: center;
+}
+.footer__data .gericht ul li {
+  margin: 1rem 0.7rem;
+}
+.footer__data .gericht ul li a {
+  color: var(--mini-sub-color);
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.footer__data .gericht ul li a:hover {
+  color: var(--main-color);
+}
+
+.footer__data .working p {
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
+.copy {
+  padding: 1.2rem;
+  background: #000;
+  font-family: var(--sub-font-family);
+  color: #fff;
+}
+
+@media screen and (max-width: 1300px) {
+  .footer__data {
+    width: 100%;
+  }
+  .footer__data .contact .contact__title,
+  .footer__data .working .working__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .footer__data .gericht .gericht__image {
+    width: 200px;
+  }
+  .footer__data .working p,
+  .footer__data .contact p,
+  .footer__data .gericht p {
+    font-size: 15px;
+  }
+  .footer__data .gericht ul li {
+    margin: 1rem 0.5rem;
+  }
+  .footer__data .gericht ul li a {
+    color: var(--mini-sub-color);
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .copy {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__data {
+    width: 100%;
+    margin: 7rem auto 5rem auto;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  .footer__data .contact .contact__title,
+  .footer__data .working .working__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .footer__data .gericht .gericht__image {
+    width: 200px;
+  }
+  .footer__data .working p,
+  .footer__data .contact p,
+  .footer__data .gericht p {
+    font-size: 15px;
+  }
+  .footer__data .gericht ul li {
+    margin: 1rem 0.5rem;
+  }
+  .footer__data .gericht ul li a {
+    color: var(--mini-sub-color);
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .copy {
+    font-size: 13px;
+  }
+}

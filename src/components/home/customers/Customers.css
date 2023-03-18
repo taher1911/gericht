@@ -1,0 +1,19 @@
+.home__customers {
+  text-align: center;
+  padding: var(--section-padding);
+  position: relative;
+}
+
+.home__customers .customers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em 0.5em;
+  margin-top: 5rem;
+}
+@media screen and (max-width: 900px) {
+  .home__customers .customers {
+    grid-template-columns: 1fr;
+    gap: 1em 0.5em;
+    margin-top: 2.5rem;
+  }
+}

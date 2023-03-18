@@ -1,0 +1,51 @@
+.main__button {
+  display: inline-block;
+  overflow: hidden;
+  border-style: solid;
+  color: #0c0c0c;
+  background: transparent;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--main-color);
+  padding: 8px 32px 8px 32px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+  font-size: var(--small-font);
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 28px;
+  letter-spacing: 0.64px;
+  position: relative;
+  z-index: 1;
+}
+
+.main__button.reverse {
+  background: var(--main-color);
+  color: var(--main-color);
+}
+.main__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: var(--main-color);
+  transition: 0.35s all ease-in-out;
+}
+
+.main__button.reverse::before {
+  background: #000;
+}
+
+.main__button:hover::before {
+  left: unset;
+  right: 0;
+  width: 0%;
+}
+
+@media screen and (max-width: 650px) {
+  .main__button {
+    padding: 5px 20px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,93 @@
+.home__believe {
+  padding: var(--section-padding);
+  background-image: url("../../../assets/home-about-section.png");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home__believe .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
+  align-items: center;
+}
+.home__believe .image img {
+  max-width: 100%;
+}
+
+.home__believe .content .text .description {
+  margin: 3rem 0;
+  color: var(--mini-sub-color);
+  font-family: var(--sub-font-family);
+  line-height: 2;
+}
+
+.home__believe .content .text .description span {
+  margin-right: 1.2rem;
+}
+
+.home__believe .content .text .about .name {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.home__believe .content .text .about .job {
+  color: var(--mini-sub-color);
+  font-family: var(--sub-font-family);
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .home__believe .content {
+    grid-template-columns: 1fr 1.25fr;
+    gap: 3em;
+  }
+  .home__believe .content .text .description {
+    margin: 2rem 0;
+  }
+  .home__believe .content .text .about .name {
+    font-size: 1.8rem;
+  }
+  .home__believe .content .text .about img {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__believe .content {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  .home__believe .image {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home__believe .image {
+    width: 90%;
+  }
+  .home__believe .content .text .description {
+    margin: 1rem 0;
+    line-height: 1.8;
+    font-size: 13px;
+  }
+  .home__believe .content .text .description span {
+    margin-right: 0.8rem;
+  }
+  .home__believe .content .text .description span img {
+    width: 30px;
+  }
+  .home__believe .content .text .about .name {
+    font-size: 1.3rem;
+  }
+  .home__believe .content .text .about .job {
+    font-size: 13px;
+    margin-bottom: 1.5rem;
+  }
+  .home__believe .content .text .about img {
+    width: 110px;
+  }
+}

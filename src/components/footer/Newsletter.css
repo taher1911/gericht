@@ -1,0 +1,54 @@
+.newsletter {
+  background: #0c0c0c;
+  border: 1px solid var(--main-color);
+  padding: 4rem;
+  width: 1400px;
+  max-width: 90%;
+  margin: -20rem auto 0 auto;
+  position: relative;
+}
+
+.newsletter .updates {
+  color: var(--mini-sub-color);
+  font-family: var(--sub-font-family);
+  margin: 2.5rem 0 4rem 0;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: -70px;
+  left: 12%;
+}
+@media screen and (max-width: 1300px) {
+  .newsletter form {
+    width: 65%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .newsletter form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .newsletter {
+    padding: 4rem 2rem;
+  }
+  .newsletter .logo .restaurant__logo {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .newsletter {
+    padding: 3rem 1rem;
+  }
+  .newsletter form {
+    flex-direction: column;
+    gap: 1em;
+  }
+}

@@ -1,0 +1,157 @@
+.about__history__section {
+  padding: var(--section-padding);
+  text-align: center;
+}
+
+.about__history__section .history__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 4rem;
+}
+
+.about__history__section .history__content .history__content__child img.image {
+  width: 100%;
+}
+
+.about__history__section .history__content .history__content__child1 p {
+  font-family: var(--sub-font-family);
+  color: var(--mini-sub-color);
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+.about__history__section .history__content .history__content__child2 h3 {
+  font-size: 45px;
+  margin: 2rem 0 3rem 0;
+}
+
+.about__history__section .history__content .history__content__child2 .numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__history__section
+  .history__content
+  .history__content__child2
+  .numbers
+  .number
+  h4 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 58px;
+}
+
+.about__history__section
+  .history__content
+  .history__content__child2
+  .numbers
+  .number
+  img {
+  margin: 2rem 0;
+}
+
+.about__history__section
+  .history__content
+  .history__content__child2
+  .numbers
+  .number
+  p {
+  font-size: 1.4em;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  color: var(--sub-color);
+}
+
+@media screen and (max-width: 1000px) {
+  .about__history__section .history__content {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about__history__section .history__content {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .about__history__section .history__content .history__content__child1 p {
+    font-size: 15px;
+  }
+  .about__history__section
+    .history__content
+    .history__content__child
+    img.image {
+    width: 70%;
+  }
+  .about__history__section .history__content .history__content__child2 h3 {
+    font-size: 40px;
+    margin: 2rem 0 2rem 0;
+  }
+
+  .about__history__section
+    .history__content
+    .history__content__child2
+    .numbers
+    .number
+    h4 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 58px;
+  }
+  .clear__breakline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about__history__section .history__content {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+  .about__history__section .history__content .history__content__child1 p {
+    font-size: 13px;
+  }
+  .about__history__section
+    .history__content
+    .history__content__child
+    img.image {
+    width: 100%;
+  }
+  .about__history__section .history__content .history__content__child2 h3 {
+    font-size: 30px;
+    margin: 2rem 0 2rem 0;
+  }
+
+  .about__history__section
+    .history__content
+    .history__content__child2
+    .numbers
+    .number
+    h4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 58px;
+  }
+  .about__history__section
+    .history__content
+    .history__content__child2
+    .numbers
+    .number {
+    text-align: center;
+  }
+  .about__history__section
+    .history__content
+    .history__content__child2
+    .numbers
+    .number
+    p {
+    font-size: 0.9em;
+  }
+}
