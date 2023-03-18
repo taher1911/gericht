@@ -1,12 +1,12 @@
-import React from "react";
+import React, { lazy } from "react";
 
 import PageTransiton from "../components/page-transition/PageTransiton";
 
-import PagesHeader from "../ui/other-pages-header/Header";
-import Serving from "../components/services/serving/Serving";
-import Booking from "../components/home/booking/Booking";
-import Menus from "../components/home/menus/Menus";
-import Happy from "../components/services/happy/Happy";
+const PagesHeader = lazy(() => import("../ui/other-pages-header/Header"));
+const Serving = lazy(() => import("../components/services/serving/Serving"));
+const Booking = lazy(() => import("../components/home/booking/Booking"));
+const Menus = lazy(() => import("../components/home/menus/Menus"));
+const Happy = lazy(() => import("../components/services/happy/Happy"));
 
 const Services = () => {
   return (

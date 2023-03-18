@@ -1,12 +1,12 @@
-import React from "react";
+import React, { lazy } from "react";
 
 import PageTransiton from "../components/page-transition/PageTransiton";
 
-import Container from "../ui/container/Container";
-import PagesHeader from "../ui/other-pages-header/Header";
-import TeamSliser from "../components/team/team-slider/Team";
-import Video from "../components/about/hours/Video";
-import Laurels from "../components/home/laurels/Laurels";
+const Container = lazy(() => import("../ui/container/Container"));
+const PagesHeader = lazy(() => import("../ui/other-pages-header/Header"));
+const TeamSliser = lazy(() => import("../components/team/team-slider/Team"));
+const Video = lazy(() => import("../components/about/hours/Video"));
+const Laurels = lazy(() => import("../components/home/laurels/Laurels"));
 
 const Team = () => {
   return (

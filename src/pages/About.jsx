@@ -1,13 +1,13 @@
-import React from "react";
+import React, { lazy } from "react";
 
 import PageTransiton from "../components/page-transition/PageTransiton";
 
-import PagesHeader from "../ui/other-pages-header/Header";
-import History from "../components/about/history/History";
-import Hours from "../components/about/hours/Hours";
-import Believe from "../components/home/believe/Believe";
-import Customers from "../components/home/customers/Customers";
-import Gallery from "../components/home/gallery/Gallery";
+const PagesHeader = lazy(() => import("../ui/other-pages-header/Header"));
+const History = lazy(() => import("../components/about/history/History"));
+const Hours = lazy(() => import("../components/about/hours/Hours"));
+const Believe = lazy(() => import("../components/home/believe/Believe"));
+const Customers = lazy(() => import("../components/home/customers/Customers"));
+const Gallery = lazy(() => import("../components/home/gallery/Gallery"));
 
 const About = () => {
   return (

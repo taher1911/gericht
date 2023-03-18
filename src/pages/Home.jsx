@@ -1,16 +1,16 @@
-import React from "react";
+import React, { lazy } from "react";
 
 import PageTransiton from "../components/page-transition/PageTransiton";
 
-import Header from "../components/home/header/Header";
-import About from "../components/home/about/About";
-import Booking from "../components/home/booking/Booking";
-import Menus from "../components/home/menus/Menus";
-import Special from "../components/home/special/Special";
-import Believe from "../components/home/believe/Believe";
-import Customers from "../components/home/customers/Customers";
-import Laurels from "../components/home/laurels/Laurels";
-import Gallery from "../components/home/gallery/Gallery";
+const Header = lazy(() => import("../components/home/header/Header"));
+const About = lazy(() => import("../components/home/about/About"));
+const Booking = lazy(() => import("../components/home/booking/Booking"));
+const Menus = lazy(() => import("../components/home/menus/Menus"));
+const Special = lazy(() => import("../components/home/special/Special"));
+const Believe = lazy(() => import("../components/home/believe/Believe"));
+const Customers = lazy(() => import("../components/home/customers/Customers"));
+const Laurels = lazy(() => import("../components/home/laurels/Laurels"));
+const Gallery = lazy(() => import("../components/home/gallery/Gallery"));
 
 const Home = () => {
   return (

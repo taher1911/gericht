@@ -1,11 +1,11 @@
-import React from "react";
+import React, { lazy } from "react";
 
 import PageTransiton from "../components/page-transition/PageTransiton";
 
-import Container from "../ui/container/Container";
-import PagesHeader from "../ui/other-pages-header/Header";
-import Map from "../components/contact/map/Map";
-import Form from "../components/contact/form/Form";
+const Container = lazy(() => import("../ui/container/Container"));
+const PagesHeader = lazy(() => import("../ui/other-pages-header/Header"));
+const Map = lazy(() => import("../components/contact/map/Map"));
+const Form = lazy(() => import("../components/contact/form/Form"));
 const Contact = () => {
   return (
     <PageTransiton>
